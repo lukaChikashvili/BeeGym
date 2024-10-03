@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
-import { EffectComposer, Noise } from '@react-three/postprocessing'
-import { BlendFunction } from 'postprocessing'
+import { Suspense } from 'react'
+import Scene from './Scene'
 
 
 const CanvasPage = () => {
@@ -8,18 +8,12 @@ const CanvasPage = () => {
     <>
     
       <Canvas>
+        
       <ambientLight intensity={1.5}/>
-      <EffectComposer>
-                 <Noise 
-                 premultiply
-                 blendFunction={BlendFunction.SOFT_LIGHT}/>
-           </EffectComposer>
 
-       <mesh>
-          <planeGeometry args={[20,10]} />
-          <meshStandardMaterial color = "#fff" />
-       </mesh>
-          
+        <Suspense fallback = {null}>
+            <Scene />
+        </Suspense>
         
       </Canvas>
     </>

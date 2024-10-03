@@ -9,12 +9,13 @@ const Scene = () => {
      <EffectComposer>
                  <Noise 
                  premultiply
-                 blendFunction={BlendFunction.SOFT_LIGHT}/>
+                 
+                 blendFunction={BlendFunction.SRC}/>
            </EffectComposer>
 
        <mesh>
           <planeGeometry args={[20,10]} />
-          <meshStandardMaterial color = "#229799" />
+          <meshBasicMaterial color = "#454545" />
        </mesh>
           
  </>

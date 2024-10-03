@@ -1,4 +1,5 @@
 import CanvasPage from "./components/CanvasPage"
+import Header from "./components/Header"
 
 
 function App() {
@@ -6,7 +7,15 @@ function App() {
 
   return (
     <>
-      <CanvasPage />
+
+    <Header />
+
+    <div className="canvas_container">
+        <CanvasPage />
+    </div>
+
+
+      
     </>
   )
 }

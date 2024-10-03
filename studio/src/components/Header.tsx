@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="w-full  flex items-center justify-between px-16 py-6 text-white">
         <div>
-            <h1 className="text-3xl">BeeGym</h1>
+            <h1 className="text-3xl opacity-0 md:opacity-100">BeeGym</h1>
         </div>
 
      

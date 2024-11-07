@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/agdasima');
+@import url('https://fonts.cdnfonts.com/css/magistral-honesty');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,7 @@
 #root {
     width: 100%;
     min-height: 100vh;
-    font-family: 'Agdasima', sans-serif;
+    font-family: 'Magistral Honesty', sans-serif;
 
 }
 
@@ -41,3 +41,10 @@
     width: 100%;
    
 }
+
+.whitespace {
+    white-space: pre;
+    display: inline-block;
+}
+
+
